@@ -65,6 +65,11 @@ footer {
 .panel-heading{
 	background-color: #FFFFFF;
 
+
+}
+.panel-title{
+
+	font-family: Arial Black, Impact, Georgia;
 }
 .btn{
 	margin-top: 7px;
