@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>LEYENDAS DEL ROCK</title>
+		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	
+		<div class="container" id="main">
+		
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+													
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li>
+										<a href="https://www.rollingstone.com/">Noticias de Rock</a>
+									</li>
+																		
+									<li>
+										<a href="https://mariskalrock.com/category/secciones/efemerides/">Efemérides</a>
+									</li>
+									<li>
+										<a href="http://anecdotariodelrock.blogspot.com/">Anecdotario del rock</a>
+									</li>									
+									
+									<li>
+										<a href="http://enciclopediarock.com/">Enciclopedia de rock (en italiano)</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+						</ul>
+						
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Busca en este sitio..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+						
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Mi cuenta <strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Ajustes</a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Actualizar perfil</a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Cuenta</a>
+									</li>
+									
+									<li class="divider"></li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Salir</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- end nav pull-right -->
+					</div><!-- end nav-collapse -->
+				
+				</div><!-- end container -->
+			</div><!-- end navbar -->
+			
+			
+			<div class="carousel slide" id="myCarousel">
+			
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+			
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>LEYENDAS DEL ROCK</h4>
+							<p>Espacio musical dedicado a uno de los g&eacute;neros m&aacute;s importantes de la m&uacute;sica popular, con sus grandes grupos ic&oacute;nicos</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>LEYENDAS DEL ROCK</h4>
+							<p>Los grupos m&aacute;s relevantes desde la d&eacute;cada de los 50 hasta la actualidad.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>LEYENDAS DEL ROCK</h4>
+							<p>Los grupos m&aacute;s importantes cuentan con su espacio en esta mini-enciclopedia de rock, con art&iacute;culos muy interesantes</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div><!-- carousel-inner -->
+				
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			
+			</div><!-- end myCarousel -->
+			
+			<header>		
+			<div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2 style="text-align: center;">BANDAS Y SOLISTAS</h2>
+					<p class="lead" style="text-align: center;">Selección de grupos y solistas de rock, algunos de ellos dentro del Rock n Roll Hall of Fame.</p>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+			</header>
+			
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">QUEEN</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/queen.jpg" alt="Queen" class="img-circle">
+						
+						<p>Una de las bandas británicas más señeras y más rompedoras en los 70 y 80, la "Reina" de las bandas de rock, aun tras el fallecimiento de Freddie Mercury.</p>
+						
+						<a href="http://www.queenonline.com/es" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Queen" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">VAN HALEN</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/vanhalen.jpg" alt="Van Halen" class="img-circle">
+						
+						<p>La banda californiana que llevó al hard rock a lo más alto, con su carismático frontman David Lee Roth y su virtuoso guitarrista Eddie Van Halen</p>
+						
+						<a href="http://www.van-halen.com/" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Van_Halen" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">STATUS QUO</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/statusquo.jpg" alt="Status Quo" class="img-circle">
+						
+						<p>Seis d&eacute;cadas de rock and roll contempla a unos brit&aacute;nicos que son leyenda, desde sus inicios sicod&eacute;licos al AOR, figurando incluso en el libro Guiness de los R&eacute;cords</p>
+						
+						<a href="http://www.statusquo.co.uk/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Status_Quo_(banda)" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">DIRE STRAITS</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/direstraits.jpg" alt="Dire Straits" class="img-circle">
+						
+						<p>Recientemente añadidos al Rock n Roll Hall of Fame, una de las bandas brit&aacute;nicas m&aacute;s relevantes, con su carism&aacute;tico lider Mark Knopfler</p><br>
+						
+						<a href="http://www.markknopfler.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Dire_Straits" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">JOE SATRIANI</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/joesatriani.jpg" alt="Joe Satriani" class="img-circle">
+						
+						<p>Maestro de maestros en la guitarra, habiendo sido profesor de otros grandes maestros de las seis cuerdas como Steve Vai y Kirk Hammett de Metallica.</p>
+						
+						<a href="http://www.satriani.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Joe_Satriani" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">STEVE VAI</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/stevevai.jpg" alt="Steve Vai" class="img-circle">
+						
+						<p>Alumno en su juventud de Joe Satriani, y habiendo formado parte del grupo de Frank Zappa y David Lee Roth, es considerado como el guitarrista m&aacute;s innovador de su generaci&oacute;n</p><br>
+						
+						<a href="https://www.vai.com/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Steve_Vai" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">METALLICA</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/metallica.jpg" alt="Metallica" class="img-circle">
+						
+						<p>La banda de San Francisco, junto a Slayer, Anthrax y Megadeth, los cuatro grandes bandas del thrash metal, liderada por James Hetfield y Lars Ulrich.</p><br><br><br>
+						
+						<a href="https://www.metallica.com/" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Metallica" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">JOE COCKER</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/joecocker.jpg" alt="Joe Cocker" class="img-circle">
+						
+						<p>La voz rota de Joe Cocker, uno de los vocalistas m&aacute;s reconocibles en el mundo del rock, recientemente fallecido y figura de Woodstock.</p><br><br><br><br>
+						
+						<a href="https://www.cocker.com/" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Joe_Cocker" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">VAN MORRISON</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/vanmorrison.jpg" alt="Van Morrison" class="img-circle">
+						
+						<p>El "Le&oacute;n de Belfast" como es conocido, siendo una de las voces más relevantes del mundo del rock y el soul, este irland&eacute;s universal.</p>
+						
+						<a href="https://www.vanmorrison.com/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Van_Morrison" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">ARETHA FRANKLIN</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/aretha.jpg" alt="Aretha Franklin" class="img-circle">
+						
+						<p>La gran diva del soul, que fue muy influyente para artistas de toda clase de g&eacute;neros, por supuesto, el rock.</p>
+						
+						<a href="https://www.arethafranklin.net/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Aretha_Franklin" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">JANIS JOPLIN</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/janisjoplin.png" alt="Janis Joplin" class="img-circle">
+						
+						<p>Una de las mejores voces femeninas del rock de todos los tiempos, y fallecida muy joven a la edad de 27 años.</p><br>
+						
+						<a href="https://janisjoplin.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Janis_Joplin" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">TINA TURNER</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/tinaturner.jpg" alt="Tina Turner" class="img-circle">
+						
+						<p>La reina del rock propiamente dicho, ya reconocida en su etapa con su exmarido Ike Turner, ya retirada de los escenarios pero su reputación artística nunca igualada por ninguna sustituta.</p>
+						
+						<a href="http://www.tinaturnerofficial.com/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Tina_Turner" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">LUZ CASAL</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/luzcasal.jpg" alt="Luz Casal" class="img-circle">
+						
+						<p>La Tina Turner española, un símbolo del rock nacional y reconocida fuera de nuestras fronteras, esta gallega ya emblemática del rock patrio.</p>
+						
+						<a href="http://luzcasal.es/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Luz_Casal" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">TRIANA</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/triana.jpg" alt="Triana" class="img-circle">
+						
+						<p>La banda más emblemática del rock andaluz, género que surgió en Sevilla en los años 70, y liderada por el fallecido Jesús de la Rosa.</p><br><br>
+						
+						<a href="https://es.wikipedia.org/wiki/Triana_(banda)" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Triana_(banda)" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">MEDINA AZAHARA</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/medina.jpg" alt="Medina Azahara" class="img-circle">
+						
+						<p>Una de las bandas del rock andaluz más emblemáticas y supervivientes del género, con momentos de auge y decadencia pero gran banda de la ciudad de Córdoba.</p><br><br>
+			
+						<a href="http://www.medinaazahara.es/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Medina_Azahara_(banda)" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">ERIC CLAPTON</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/ericclapton.jpg" alt="Eric Clapton" class="img-circle">
+						
+						<p>"Mano Lenta" o "Dios" como lo llamaban en Londres, una de las mayores leyendas de la guitarra rock y blues, un músico completo.</p>
+						
+						<a href="http://www.ericclapton.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Eric_Clapton" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">PINK FLOYD</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/pinkfloyd.jpg" alt="Pink Floyd" class="img-circle">
+						
+						<p>Quizás la banda de rock progresivo más importante del mundo, con David Gilmour y Roger Waters como principales compositores del grupo.</p>
+						
+						<a href="http://www.pinkfloyd.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Pink_Floyd" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">RAINBOW</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/rainbow.jpg" alt="Rainbow" class="img-circle">
+						
+						<p>Aunque lleva años disuelto el grupo liderado por Ritchie Blackmore, no es óbice para haber sido una de las bandas de hard rock británico más influyentes.</p>
+						<a href="https://es.wikipedia.org/wiki/Rainbow" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Rainbow" target="_blank" class="btn btn-info btn-block">Biografía</a>
+
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">AC/DC</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/acdc.jpg" alt="AC/DC" class="img-circle">
+						
+						<p>La banda australiana mundialmente reconocida, ya sin su miembro fundador Malcolm Young, pero con la reputación aún intacta como banda universal de rock n roll.</p>
+						
+						<a href="https://www.acdc.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/AC/DC" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">THE BEATLES</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/beatles.jpg" alt="The Beatles" class="img-circle">
+						
+						<p><br>La banda de música popular más famosa del mundo, sin ser propiamente rockeros pero sí fuerte influencia para el género del rock, con John Lennon, Paul MacArtney, George Harrison y Ringo Starr.</p><br>
+						
+						<a href="https://www.thebeatles.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/The_Beatles" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">KISS</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/kiss.jpg" alt="Kiss" class="img-circle">
+						
+						<p>Una de las bandas m&aacute;s originales del hard rock, con sus atuendos y maquillaje que en directo, eran todo un espectáculo audiovisual, superando con creces a sus contemporáneos en vivo.</p><br>
+						
+						<a href="https://www.kissonline.com/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Kiss" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">LIVING COLOUR</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/livingcolour.jpg" alt="Living Colour" class="img-circle">
+						
+						<p>La banda afroamericana neoyorquina, que se disolvió a mediados de los 90, pero que conformó un estilo mezclado por diversos estilos musicales, entre el hard rock, el jazz y el funk.</p>
+						
+						<a href="http://livingcolour.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Living_Colour" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">RAGE AGAINST THE MACHINE</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/rage.jpg" alt="Rage Against The Machine" class="img-circle">
+						
+						<p>Una de las bandas más importantes que fusionan el hip hop y el metal, con fuerte carga social de sus letras acompañadas por el virtuoso guitarrista Tom Morello, uno de los guitarristas más relevantes de la escena actual del rock.</p><br>
+						
+						<a href="https://www.ratm.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Rage_Against_the_Machine" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">CHICKENFOOT</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/chickenfoot.jpg" alt="Chickenfoot" class="img-circle">
+						
+						<p>Supergrupo formado por leyendas del rock en 2008, con Sammy Hagar (ex Van Halen) a la voz, Joe Satriani a la guitarra, Chad Smith de Red Hot Chili Peppers y el bajista (ex Van Halen) Michael Anthony.</p>
+						
+						<a href="http://www.chickenfoot.us/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Chickenfoot" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">DEEP PURPLE</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/deeppurple.jpg" alt="Deep Purple" class="img-circle">
+						
+						<p>Una de las bandas británicas que fue junto a Led Zeppelin padres del hard rock y antesala del posterior heavy metal, con Ritchie Blackmore como principal compositor del grupo. </p><br>
+						
+						<a href="http://www.deeppurple.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Deep_Purple" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">LED ZEPPELIN</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/ledzeppelin.jpg" alt="Led Zeppelin" class="img-circle">
+						
+						<p>Junto a Deep Purple, fueron los padres del hard rock y pioneros en lo que posteriormente se conocería como heavy metal, con Robert Plant y Jimmy Page como cabezas visibles del grupo.</p>
+						
+						<a href="http://www.ledzeppelin.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Led_Zeppelin" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">DREAM THEATER</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/dreamtheater.jpg" alt="Dream Theater" class="img-circle">
+						
+						<p>Supergrupo formado por virtuosos nacidos en la prestigiosa Berkeley School Of Music, siendo una de las bandas de metal progresivo más reputada del mundo metálico.</p>
+						
+						<a href="http://dreamtheater.net/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Dream_Theater" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">GARY MOORE</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/garymoore.jpg" alt="Gary Moore" class="img-circle">
+						
+						<p>Uno de los guitarristas más completos del mundo, recientemente fallecido, que podía tocar igual de bien blues como hard rock, siendo una leyenda del rock irlandés.</p>
+						
+						<a href="http://www.gary-moore.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Gary_Moore" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">THIN LIZZY</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/thinlizzy.jpg" alt="Thin Lizzy" class="img-circle">
+						
+						<p>Una banda irlandesa mítica, de culto para los amantes del hard rock, con el fallecido bajista de color Phil Lynott, muy popular durante los años 70 y parte de los 80.</p><br><br>
+						
+						<a href="http://www.thinlizzyband.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Thin_Lizzy" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">SANTANA</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/santana.jpg" alt="Santana" class="img-circle">
+						
+						<p>Uno de los últimos supervivientes del mítico concierto de Woodstock, ganador de múltiples Grammys y considerado el mejor guitarrista latino de todos los tiempos.</p><br><br>
+						
+						<a href="https://www.santana.com/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Santana_(banda)" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">THE ROLLING STONES</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/rollingstones.jpg" alt="The Rolling Stones" class="img-circle">
+						
+						<p>"Sus satánicas majestades", una de las bandas británicas en activo más antiguas, con su carismático líder Mick Jagger que a sus más de 70 años está en plena forma</p><br>
+						
+						<a href="http://www.rollingstones.com/" target="_blank" class="btn btn-warning btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/The_Rolling_Stones" target="_blank" class="btn btn-warning btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">MÄGO DE OZ</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/magooz.jpg" alt="Mägo de Oz" class="img-circle">
+						
+						<p>Una de las bandas de rock español más importantes, con gran influencia en música celta y los Jethro Tull, con Patricia Tapia como vocalista principal.</p><br><br>
+						
+						<a href="http://www.magodeoz.com/" target="_blank" class="btn btn-danger btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/M%C3%A4go_de_Oz" target="_blank" class="btn btn-danger btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">ROSENDO</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/rosendo.jpg" alt="Rosendo Mercado" class="img-circle">
+						
+						<p>El carismático lídes de Leño allá por los 70, con una intensísima carrera musical en solitario, que en breve finalizará con una gira de despedida de los escenarios.</p><br><br>
+						
+						<a href="http://www.rosendo.es/" target="_blank" class="btn btn-info btn-block">Sitio Oficial</a>
+						<a href="https://es.wikipedia.org/wiki/Rosendo_Mercado" target="_blank" class="btn btn-info btn-block">Biografía</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			<hr>
+			<div class="row" id="moreInfo">
+				<div class="col-sm-6">
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Localización</a></li>
+							<li><a href="#tab2" data-toggle="tab">Personal</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span>Mi Localización</h4>
+								
+								<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8963.69508655387!2d-5.97695138414377!3d37.410052466996966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scalle+hermandades+sevilla!5e0!3m2!1ses!2ses!4v1538562511116" frameborder="2" style="border:10px;box-shadow: #FF7200 7px 7px 10px;" allowfullscreen></iframe>
+								
+								
+							</div><!-- end tab-pane -->
+							
+							<div class="tab-pane" id="tab2">
+								<h4>Mi caricatura <small>usando Adobe Illustrator</small></h4>
+								
+								<img src="C:\xampp\htdocs\RockLegends\images\Yo.png" class="thumbnail pull-left" alt="Mi caricatura">
+								<p> Nacido en Sevilla, en 1976. Criado toda la vida en la barriada El Rocío, mis contactos con la música se iniciaron escuchando los viejos LP de mis padres, entre los que había cantantes italianos como Pino Donaggio, de soul como Roberta Flack o Donna Hightower, y españoles como Nino Bravo, Bruno Lomas,...</p><p>Durante mi adolescencia, el intercambio de música con mis compañeros y amigos de instituto, me iniciaron en el rock, con grupos como Queen y Status Quo, que aún escucho y poseo discografía, como grupos de iniciación....más tarde llegaron Van Halen, Led Zeppelin, Deep Purple,...indagando en la historia del rock, con prensa especializada y diversa bibliografía, así como el coleccionismo de discos</p><p>Con la llegada de las redes sociales, creé varios espacios musicales como "Rock de la A a la Z", "Rocker's Club", etc. que me permitió conocer a gente con gustos similares a los míos, y expandir conocimientos sobre música</p>
+					
+								
+								<hr>
+								
+								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Presiona para mandar mensaje al autor.</a>
+								
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+																																		
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Nombre</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Mensaje</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Enviar</button>
+														</div>
+													</div>
+												</form>
+											</div><!-- end modal-body -->
+											
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Cerrar</button> <button class="btn btn-primary" type="button">Guardar cambios</button>
+											</div><!-- end modal-footer -->
+										</div><!-- end modal-content -->
+									</div><!-- end modal-dialog -->
+								</div><!-- end myModal -->
+							</div><!-- end tab-pane -->
+						</div><!-- end tab-content -->
+					</div><!-- end tabbable -->
+				</div><!-- end col-sm-6 -->
+				
+				<div class="col-sm-6" class="special">
+					<h3>Información Adicional</h3>
+					<p>LEYENDAS DEL ROCK pretende mostrar a toda clase de público la calidad de los artistas que se incluyen en la página, así como enlaces externos a páginas especializadas en el mundo de la música, y principalmente el rock.</p>
+					
+					<h4>Músicos</h4>
+					
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Vocalistas</h4>
+							<p class="list-group-item-text">Freddie Mercury, Robert Plant, Chris Cornell, Axl Rose, Brian Johnson, Bon Scott, James Labrie, Aretha Franklin, Simone Simmons,...</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Guitarristas</h4>
+							<p class="list-group-item-text">Jimi Hendrix, Ritchie Blackmore, Eddie Van Halen, Eric Clapton, Joe Satriani, Steve Vai, Keith Richards, David Gilmour...</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Bajistas</h4>
+							<p class="list-group-item-text">Flea, John Entwistle, Glenn Hughes, Victor Wooten, Jaco Pastorius, Jack Bruce, Sting, Les Claypool, Billy Sheehan,...</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Baterías/percusionistas</h4>
+							<p class="list-group-item-text">Neil Peart, Ginger Baker, John Bonham, Keith Moon, Alex Van Halen, Roger Taylor, Mike Portnoy,...</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Teclistas</h4>
+							<p class="list-group-item-text">Rick Wakeman, Jordan Ruddess, Jon Lord, Ray Manzarek, Steve Winwood, Don Airey,...</p>
+						</a>
+					</div><!-- list-group -->
+				</div><!-- end col-sm-6 -->
+			</div><!-- end moreInfo -->
+			
+			<hr>
+			
+			<div class="row" id="moreCourses">
+				<div class="col-12">
+					<h3>ENLACES EXTERNOS</h3>
+					<div class="thumbnails row">
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/digitaldreamdoor.png" alt="Digital Dream Door">
+								
+															
+								<div class="caption">
+									<h3><strong>DIGITAL DREAM DOOR.COM</strong></h3>
+									
+									<p>Página en inglés que incluyen las mejores listas de artistas, discos, etc. de la historia de la música. Los grandes artistas y solistas de múltiples géneros tienen cabida aquí, con todos los subgéneros relacionados con el rock.</p>
+									
+									<p><a href="https://digitaldreamdoor.com/" class="btn btn-primary btn-small" target="_blank">DigitalDreamDoor</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+						
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/halloffame.png" alt="R&R Hall of Fame">
+																					
+								<div class="caption">
+									<h3><strong>ROCK & ROLL HALL OF FAME</strong></h3>
+									
+									<p>Salón de la fama del Rock n Roll, situada en Cleveland (EEUU), donde se eligen cada año candidatos a ingresar en este museo del rock, dentro de grupos y solistas históricos</p>
+									
+									<p><a href="https://www.rockhall.com/" class="btn btn-primary btn-small" target="_blank">R&R Hall of Fame</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+					</div><!-- end row -->
+					<div class="row" id="moreCourses">
+				<div class="col-12">
+					<div class="thumbnails row">
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/rockfm.png" alt="Rock FM">
+													
+								
+								<div class="caption">
+									<h3><strong>ROCK FM</strong></h3>
+									
+									<p>Página de la emisora RockFM, con el Pirata y su banda (Sayago y Lucía), el Francotirarock, Little Steve, Marta Vázquez, Rodrigo Contreras,...</p>
+									
+									<p><a href="http://www.rockfm.fm/" class="btn btn-primary btn-small" target="_blank">Rock FM</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+						
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/rafabasa.jpeg" alt="Rafa Basa">
+													
+								
+								<div class="caption">
+									<h3><strong>RAFABASA.COM</strong></h3>
+									
+									<p>Histórico periodista español especializado en el heavy metal, y una referencia en el mundo musical nacional en bandas de metal pesado.</p>
+									
+									<p><a href="https://www.rafabasa.com/portada/" class="btn btn-primary btn-small" target="_blank">Rafabasa.com</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+					</div><!-- end row -->
+					
+				</div><!-- end col-12 -->
+			</div><!-- end moreCourses -->
+		</div><!-- end container -->
+				</div><!-- end col-12 -->
+			</div><!-- end moreCourses -->
+		</div><!-- end container -->
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6><span>Copyright &copy; 2018 <br>Germán Ontiveros Orta</span></h6>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-4">
+						<h6><span>Sobre mí</span></h6>
+						<p>Amante del rock n roll desde mi adolescencia, donde grupos como Queen, Status Quo, Van Halen, etc. me adentraron en el increíble mundo del rock n roll, y desde donde empecé a coleccionar discos y embriagarme de su historia, escuchando discos y leyendo bibliografías musicales, como biografías y ensayos sobre el género, así como prensa especializada.</p>
+					</div><!-- end col-sm-4 -->
+					
+					<div class="col-sm-2">
+						
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6><span>Redes Sociales</span></h6>
+						<ul class="unstyled">
+							<li><a href="https://www.facebook.com/mcgermon76">Facebook</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+	
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
